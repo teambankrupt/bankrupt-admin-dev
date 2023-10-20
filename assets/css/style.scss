@@ -1,0 +1,1248 @@
+$body-bg-color: #151515;
+$secondary_color: #44d62d;
+$light-dark: #444444;
+$progress-bar:#C0BFBF;
+$white:#ffffff;
+$bdr-top: #626262;
+$cat-menu-color: #3d3d3d;
+$meta-content-color: #C0BFBF;
+$footer-icon-color: #939393;
+
+
+$font-size-20: 20px;
+$font-size-17: 17px;
+$font-weight-600: 600;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500&display=swap');
+
+  @font-face {
+    font-family: 'Poppins', sans-serif;
+    src: url("../google-fonts/Poppins-Regular.ttf");
+    src: url("../google-fonts/Poppins-Medium.ttf");
+    src: url("../google-fonts/Poppins-MediumItalic.ttf");
+    src: url("../google-fonts/Poppins-Italic.ttf");
+    src: url("../google-fonts/Poppins-SemiBold.ttf");
+    src: url("../google-fonts/Poppins-SemiBoldItalic.ttf");
+    src: url("../google-fonts/Poppins-Bold.ttf");
+    src: url("../google-fonts/Poppins-BoldItalic.ttf");
+  }
+
+  @font-face {
+    font-family: 'Playfair Display', serif;
+    src: url("../google-fonts/PlayfairDisplay-Regular.ttf");
+    src: url("../google-fonts/PlayfairDisplay-Black.ttf");
+    src: url("../google-fonts/PlayfairDisplay-BlackItalic.ttf");
+    src: url("../google-fonts/PlayfairDisplay-Bold.ttf");
+    src: url("../google-fonts/PlayfairDisplay-BoldItalic.ttf");
+    src: url("../google-fonts/PlayfairDisplay-ExtraBold.ttf");
+    src: url("../google-fonts/PlayfairDisplay-ExtraBoldItalic.ttf");
+    src: url("../google-fonts/PlayfairDisplay-Italic.ttf");
+    src: url("../google-fonts/PlayfairDisplay-Medium.ttf");
+    src: url("../google-fonts/PlayfairDisplay-MediumItalic.ttf");
+    src: url("../google-fonts/PlayfairDisplay-SemiBold.ttf");
+    src: url("../google-fonts/PlayfairDisplay-SemiBoldItalic.ttf");
+  }
+
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #f0f0f0;
+    background-color: $body-bg-color;
+    font-size: 14px;
+}
+p, h1, h2, h3, h4, h5{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    transition: all .5s;
+}
+
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+div::-webkit-scrollbar {
+    width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $secondary_color;
+    border-radius: 20px;
+}
+div::-webkit-scrollbar-thumb {
+    background: #FDB994;
+}
+input{
+    color:$white !important;
+}
+textarea, textarea.form-control{
+    background: $light-dark;
+    border-color: $light-dark;
+    resize: none;
+    color:$white !important;
+}
+textarea:focus{
+    outline: none !important;
+    background: $light-dark !important;
+    border-color: $light-dark !important;
+}
+*:focus {
+    outline: none !important;
+}
+.header-left a:hover {
+    opacity: .5;
+}
+.header-left a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    transition: all .5s;
+}
+.section-title{
+    h3{
+        font-size: 20px;
+        letter-spacing: 0.05em;
+        font-weight: normal;
+    }
+    a{
+        font-weight: 600;
+        font-size: 14px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: $secondary_color;
+        transition: .3s;
+        &:hover{
+            opacity: .5;
+        }
+    }
+
+}
+
+.bdr-top{
+    border-top: 1px solid $bdr-top;
+}
+.bdr-b{
+    border-bottom: 1px solid $bdr-top;
+}
+
+/* Common Style End*/
+
+.header-area{
+    .header-left{
+        h2{
+            font-family: 'Playfair Display', serif;
+            font-size:36px;
+            font-weight: 400;
+        }
+    }
+    .batch-are {
+    img{
+        width: 32px;
+    }
+    }
+
+    .header-progress {
+        width: 100%;
+        margin-left:2%;
+        color: $progress-bar;
+        .progress-count{
+            color:$secondary_color;
+        }
+        .progress{
+            height: 0.2rem;
+            background-color: $light-dark;
+        }
+
+    }
+
+    .avater-section{
+        position: relative;
+        img{
+            float: right;
+        }
+        h4{
+            font-size: 14px;
+            color: $white;
+            letter-spacing: 0.02em;
+            font-weight: normal;
+            position: absolute;
+            bottom: 8px;
+            right: 0;
+        }
+    }
+    .progress-content span {
+        font-size: 14px;
+        font-weight: normal;
+    }
+}
+
+.search-box{
+    .search {
+        width: 100%;
+        margin-bottom: auto;
+        margin-top: 20px;
+        height: 46px;
+        background-color: rgba(255, 255, 255, 0.2);
+        padding: 10px 8px;
+        border-radius: 8px;
+        overflow:hidden;
+        .search-input {
+            padding: 0 10px;
+            width: 100%;
+            font-size: 14px;
+            font-weight: 300;
+            color: $meta-content-color;
+            transition: width 0.4s linear;
+            line-height: 20px;
+            border: 0;
+            outline: 0;
+            background: none;
+            margin-left: 25px;
+            letter-spacing: 0.01em;
+
+        }
+        .search-icon {
+            height: 34px;
+            width: 34px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 15px;
+            bottom: 28px;
+            position: relative;
+            border-radius: 5px;
+            &:hover {
+                opacity: .5;
+            }
+        }
+        a:link {
+            text-decoration: none
+        }
+
+    }
+}
+
+.reviewers-section{
+    .single-reviewers-area {
+        height: 64px;
+        img{
+            object-fit: cover;
+            max-width: 64px;
+            height: 64px;
+            border-radius:50%
+        }
+    }
+}
+
+.category-area {
+    border-top: 1px solid $bdr-top;
+    ul{
+        li{
+            a{
+                text-decoration: none;
+                color: $cat-menu-color;
+                text-transform: uppercase;
+                font-size: 17px;
+                font-weight: 600;
+                letter-spacing: 0.05em;
+                transition: all .5s;
+                &:hover{
+                    color:#f7f7f7;
+                }
+            }
+            &.active {
+                background: $secondary_color;
+                padding: 5px 12px;
+                border-radius: 16px;
+            }
+        }
+    }
+}
+.acchievements-area .owl-item img{
+    width: auto;
+    display: inline-block;
+}
+.product-section, .jobs-section, .places-section, .acchievements-section{
+    h3{
+        font-size: 20px;
+        letter-spacing: 0.05em;
+        font-weight: normal;
+    }
+    h5{
+        font-weight: 600;
+        font-size: 14px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: $secondary_color;
+        line-height: 1.7;
+    }
+}
+.product-content p, .jobs-content p, .places-content p{
+    font-size: 12px;
+    letter-spacing: 0.02em;
+    color: $meta-content-color;
+    display: flex;
+    align-items: center;
+}
+
+
+.single-product-area, .single-places-area, .single-jobs-area {
+    width:176px !important;
+    display: inline-block;
+}
+
+.product-content h4, .jobs-content h4, .places-content h4{
+    font-size: 17px;
+    font-weight: 600;
+    color: $white;
+    letter-spacing: 0.05em;
+    line-height: 1.5;
+    margin-top:10px;
+}
+.product-content p i, .jobs-content p i, .places-content p i{
+    font-size: 24px;
+    color: $secondary_color;
+    margin-right:8px;
+}
+
+.products-area img, .jobs-area img, .places-area img {
+    width: 100%;
+    height: 232px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.single-product-area, .single-jobs-area, .single-places-area {
+    border-radius: 10px;
+}
+.product-content, .jobs-content, .places-content{
+    padding: 8px 15px;
+    background:#3D3D3D;
+    height: 108px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.acchievement-rating img{
+    display: inline-block;
+}
+
+/*
+NewsPage style start
+============================== */
+
+/*
+Comunity post style start
+============================== */
+.comunity-post-area{
+    .comunity-post {
+        position: relative;
+        img {
+            height: 64px;
+        }
+        h4 {
+            font-size: 20px;
+            font-weight: normal;
+            letter-spacing: 0.05em;
+            margin-bottom: 10px;
+        }
+        .content {
+            width: 80%;
+            font-size: 14px;
+            font-weight: normal;
+            line-height: 1.5;
+            letter-spacing: 0.02em;
+        }
+        .closs-post {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
+    .comunity-add-post{
+        h4 {
+            color: $secondary_color;
+            text-transform: uppercase;
+            font-size: 14px;
+            letter-spacing: 0.05em;
+            font-weight: 600;
+            transition: .3s;
+            &:hover {
+                opacity: .3;
+            }
+        }
+        i {
+            color: $secondary_color;
+            font-size: 24px;
+            margin-right: 10px;
+            line-height: 40%;
+        }
+    }
+}
+
+/*
+Blog post style start
+============================== */
+
+.blog-post-area{
+    .blog-post-top-left{
+        img{
+            width: 40px;
+            height: 40px;
+        }
+        .content{
+            h4 {
+                font-size: 14px;
+                font-weight: 600;
+                letter-spacing: 0.04em;
+                line-height: 1.7;
+                color: $white;
+            }
+            p {
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 1.7;
+                letter-spacing: 0.01em;
+                color: $meta-content-color;
+            }
+        }
+    }
+    .blog-post-content{
+        .blog-post-meta{
+            img{
+                width: 24px;
+                height: 24px;
+            }
+            p {
+                font-size: 14px;
+                color: $secondary_color;
+                font-weight: 300;
+                letter-spacing: 0.01em;
+            }
+            .rating{
+                p {
+                    font-weight: 600;
+                    letter-spacing: 0.04em;
+                }
+            }
+            .meta-bottom{
+                h4 {
+                    font-size: 17px;
+                    letter-spacing: 0.05em;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    color: $secondary_color;
+                }
+                .right{
+                    h4 {
+                        color: $meta-content-color;
+                    }
+                }
+                img {
+                    margin-right: 7px;
+                }
+            }
+        }
+        p {
+            font-size: 14px;
+            letter-spacing: 0.01em;
+            line-height: 1.5;
+            font-weight: 300;
+            color: $meta-content-color;
+        }
+        .view-more{
+            a {
+                font-size: 14px;
+                color: $secondary_color;
+                text-decoration: none;
+                font-weight: 600;
+                letter-spacing: 0.05em;
+                text-transform: uppercase;
+                transition: .3s;
+            }
+            &:hover {
+                opacity: .5;
+            }
+        }
+    }
+    .blog-post-comment-section{
+        i {
+            font-size: 24px;
+            margin-right: 10px;
+            line-height: 40% !important;
+        }
+        h4 {
+            font-size: 14px;
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            color: $white;
+            cursor: pointer;
+            transition: .3s;
+            &:hover {
+                opacity: .5;
+            }
+        }
+    }
+}
+
+/*
+youtube-reviews style start
+============================== */
+
+.youtube-reviews{
+    .single-review-area{
+        width: 64px;
+        height: 64px;
+        display: inline-block;
+    }
+}
+
+/*
+youtube-reviews style End
+============================== */
+
+
+/*
+Product page style Start
+============================== */
+.product-single-post{
+    background-image: url(../img/product-page-all-image/single-product/product-image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 232px;
+    .recipe-content{
+        h2 {
+            font-size: 20px;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+        }
+        h3 {
+            font-size: 14px;
+            line-height: 1.7;
+            letter-spacing: 0.02em;
+            color: $meta-content-color;
+            font-weight: normal;
+            margin-top: 5px;
+            span {
+                font-size: 80%;
+                display: block;
+            }
+        }
+    }
+}
+
+
+
+/*
+Products Blog Post Section Style Start
+============================== */
+
+/*
+Rating Reviews-area style Start
+============================== */
+.rating-reviews-area{
+    .rating-count{
+        h4 {
+            font-size: 14px;
+            font-weight: normal;
+            letter-spacing: 0.02em;
+            margin: 2px 0;
+        }
+        h2 {
+            font-size: 57px;
+            letter-spacing: 0.05em;
+            margin: 5px 0;
+        }
+    }
+    .single-rating-star{
+        margin-top: 10px;
+        p {
+            font-size: 10px;
+            font-weight: normal;
+            text-transform: capitalize;
+            margin: 4px 0;
+        }
+        i {
+            font-size: 16px;
+            margin-right: 10px;
+            color: $secondary_color;
+        }
+    }
+    .description{
+        h4 {
+            font-size: 14px;
+            font-weight: normal;
+            letter-spacing: 0.02em;
+            line-height: 1.5;
+            margin: 4px 0;
+        }
+        p {
+            font-size: 14px;
+            letter-spacing: 0.02em;
+            font-weight: normal;
+            color: $meta-content-color;
+        }
+    }
+
+    .rating-review-form{
+        form{
+            label {
+                font-size: 14px;
+                margin-top: 15px;
+                font-weight: normal;
+                letter-spacing: 0.02em;
+            }
+
+            input {
+                background: $light-dark;
+                border-color: $light-dark;
+                font-size: 14px;
+                font-weight: 300;
+                color: rgba(255, 255, 255, 0.44);
+                letter-spacing: 0.01em;
+                height: 44px;
+            }
+
+            textarea {
+                background: $light-dark;
+                border-color: $light-dark;
+                font-size: 14px;
+                font-weight: 300;
+                color: rgba(255, 255, 255, 0.44);
+                letter-spacing: 0.01em;
+                height: 100px;
+                resize: none;
+                width: 100%;
+                border-radius: 3px;
+                padding: 15px;
+            }
+
+            .btn {
+                margin-top: 15px;
+                background: $secondary_color;
+                width: 56px;
+                height: 56px;
+                line-height: 40%;
+                font-size: 30px;
+                border: 0;
+                color: $white;
+                transition: all .5s;
+                &:hover{
+                        background: #3d3d3d;
+                }
+            }
+
+            label.btn{
+              display: inline-block !important;
+              line-height: 54px;
+            }
+            input[type="file"]{
+                opacity: 0;
+                visibility: hidden;
+            }
+
+        }
+    }
+}
+
+/*
+select category style Start
+============================== */
+.select-category-area{
+    .single-category-item{
+        label {
+            font-size: 14px;
+            margin-bottom: 5px;
+            letter-spacing: 0.02em;
+            font-weight: normal;
+        }
+        .form-select {
+            background: #444;
+            color: rgba(255, 255, 255, 0.44);
+            border-color: #444;
+            font-size: 14px;
+            font-weight: 300;
+            letter-spacing: 0.01em;
+        }
+    }
+}
+
+/*
+Blog Post style Start
+============================== */
+.blog-post-area{
+    .single-rating-star{
+        h5 {
+            font-size: 10px;
+            letter-spacing: 0.02em;
+            font-weight: normal;
+            line-height: 140%;
+        }
+        p {
+            font-size: 20px;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            i {
+                margin-left: 5px;
+                color:$secondary_color;
+            }
+        }
+    }
+    .blog-post-content{
+        h5 {
+            font-size: 14px;
+            margin-bottom: 10px;
+            font-weight: normal;
+            letter-spacing: 0.02em;
+        }
+    }
+    .product-gallery{
+        .single-product-item {
+            img {
+                width: 88px;
+                height: 88px;
+                object-fit: cover;
+                border-radius: 10px;
+            }
+            a {
+                text-decoration: none;
+                color: $white;
+                font-size: 14px;
+                text-transform: uppercase;
+                font-weight: 600;
+                letter-spacing: 0.05em;
+                transition: .3s;
+                &:hover {
+                    opacity: .5;
+                }
+            }
+        }
+    }
+}
+
+/*
+view all reviews style Start
+============================== */
+.view-all-reviews{
+    a {
+        color: $secondary_color;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: 600;
+        letter-spacing: 0.05em;
+        transition: .3s;
+        &:hover {
+            opacity: .5;
+        }
+    }
+}
+
+/*
+Product page style End
+============================== */
+
+/*
+Post Stap 3 page style Start
+============================== */
+.post-banner-area{
+    background-image: url(../img/post-banner/post.jpg);
+    background-size: cover;
+    background-position:center;
+    background-color: #ddd;
+    width: 100%;
+    height: 310px;
+}
+.all-rating-section {
+    background: #444;
+    border: 1px solid rgba(255, 255, 255, 0.44);
+    border-radius: 8px;
+    margin: 0;
+    margin-top: 30px;
+}
+
+.post-step-three .rating-reviews-area .all-rating-section p, .post-last-step .rating-reviews-area .all-rating-section p {
+    text-transform: capitalize;
+    font-size: 14px;
+    color: $white;
+    letter-spacing: 0.02em;
+}
+
+// .post-step-three .rating-reviews-area .single-rating-star, .post-last-step .rating-reviews-area .single-rating-star{
+//     display: flex;
+//     justify-content: space-between;
+// }
+
+.post-step-three .rating-reviews-area .single-rating-star i,  .post-last-step .rating-reviews-area .single-rating-star i{
+    font-size: 22px !important;
+}
+
+
+.post-last-step .rating-reviews-area .rating-review-form form input {background: #7C7C7C;color: rgba(255, 255, 255, 255) !important;}
+
+.post-last-step .rating-reviews-area .rating-review-form form input::placeholder {
+    color: $white;
+}
+/*
+Post Stap 3 page style End
+============================== */
+
+/*
+Post Last Stap page style Start
+============================== */
+.post-last-step-gallery img, .post-last-step-gallery label {
+    width: 88px;
+    height: 88px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.post-last-step-gallery label {
+    background: $secondary_color;
+}
+
+.post-last-step-gallery label {
+    margin-top: 0 !important;
+    text-align: center;
+    line-height: 100px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.post-last-step-gallery label i {
+    font-size: 40px;
+}
+
+.post-last-step-gallery input[type="file"] {
+    opacity: 0;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+.rating-review-form input[type="submit"].full-width, .multi-btn .btn {
+    border: 0;
+    display: block;
+    width: 100%;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: $cat-menu-color !important;
+    background: $secondary_color !important;
+    border-radius: 30px;
+    padding: 15px 0;
+    transition: .3s;
+    height: auto;
+}
+.rating-review-form input[type="submit"].full-width:hover, .post-last-step-gallery label:hover, .multi-btn .btn:hover, .boxed-btn:hover {
+    background: #3D3D3D !important;
+    color: $white !important;
+}
+
+
+/*
+Post Last Stap page style End
+============================== */
+
+/*
+Post Stap4 page style Start
+============================== */
+.multi-btn{
+    margin-top: 15px;
+    .btn {
+       border-radius: 10px;
+    }
+}
+
+.post-step4-hero-area{
+    p {
+        font-size: 14px;
+        letter-spacing: 0.02em;
+        margin-top: 15px;
+    }
+    h3 {
+        font-size: 20px;
+        letter-spacing: 0.05em;
+    }
+}
+
+.post-step4{
+    input, .post-step4 textarea {
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+    }
+}
+
+
+.post-last-step-gallery p {
+    margin-bottom: 10px;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+}
+
+
+/*
+Post Stap4 page style End
+============================== */
+/*
+Footer style start
+============================== */
+.footer-menu-area{
+    background: $cat-menu-color;
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: space-around;
+        li{
+            &.active{
+                a{
+                    color: $white;
+                }
+            }
+            a{
+                font-size: 20px;
+                color: $footer-icon-color;
+                display: block;
+                padding:20px;
+                transition: .3s;
+                &:hover{
+                color: $white;
+                }
+            }
+        }
+
+    }
+}
+
+
+/*Pros area Review-rdi-page Style Start*/
+//Globel Style Start
+.edit-btn {
+    width: 44px;
+    height: 44px;
+    background: transparent;
+    border: none;
+    color: $secondary_color;
+    font-size: 22px;
+    transition: all .5s;
+    &:hover {
+        opacity: .5;
+    }
+}
+
+.add-more-area button {
+    background: transparent;
+    border: none;
+    color: $secondary_color;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    transition: all .5s;
+    .fa {
+        margin-right: 10px;
+    }
+    &:hover{
+        opacity: .5;
+    }
+}
+
+.edit-boxed-inline-btn {
+    background: transparent;
+    border: 1px solid $secondary_color;
+    border-radius: 22px;
+    box-sizing: border-box;
+    color: $secondary_color;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 17px;
+    width: 103px;
+    height: 44px;
+    padding: 8px 16px;
+    letter-spacing: 0.05em;
+    transition: all .5s;
+    &:hover{
+        opacity: .5;
+    }
+}
+//Globel Style End
+
+//Header-review-rdi
+header.header-area.review-rdi .header-left h2 {
+    font-size: 20px;
+    line-height: 1.3;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+}
+
+//Upload-image-rdi
+.upload-img-area input, .upload-img-area label {
+    margin-left: 8px;
+    border-radius: 16px;
+    background: rgba(149, 191, 71, 0.66);
+}
+
+.upload-img-area h4 {
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    color: $white;
+}
+
+.upload-img-area h2 {
+    font-size: 20px;
+    color: $white;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+    line-height: 1.3;
+    margin-bottom: 15px;
+}
+.upload-img-area h5{
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    line-height: 1.3;
+}
+.upload-img-area p {
+    padding-left: 15px;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    line-height: 1.3;
+    margin-top: 15px;
+}
+
+.pros-area .section-title h2, .cons-area .section-title h2 {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+}
+
+.pros-single-item-content p, .cons-single-item-content p {
+    letter-spacing: 0.02em;
+    color: $white;
+}
+
+.notification-area p {
+    color: #8CD9D9;
+    letter-spacing: 0.02em;
+    line-height: 140%;
+}
+
+.notify-image-area p {
+    font-size: 17px;
+    margin-top: 25px;
+    color: #44d62c;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+}
+
+.notification-area h2 {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    line-height: 140%;
+    color: $white;
+    margin-bottom: 15px;
+}
+
+.notification-area .notify-content p {
+    line-height: 170%;
+}
+
+.notification-area .notify-content p a, .notification-area .notify-content p span {
+    color: #44d62c;
+}
+
+
+
+
+
+/*======== Review Rating Description Style Start ========*/
+.review-r-d-input-fields {
+    h2 {
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: 0.05em;
+        line-height: 140%;
+        color: $white;
+        margin-bottom: 15px;
+    }
+}
+.review-r-d-input-fields input {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    height: 44px;
+    border-color: #444;
+}
+
+.review-r-d-input-fields input:focus {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: #444;
+}
+
+
+
+
+
+.rrd-upload-img-btn label {
+    line-height: 1.3;
+    height: auto;
+    width: 199px;
+    padding: 10px;
+    border-radius: 22px;
+    box-shadow: 0px 4px 8px rgba(143, 185, 66, 0.2);
+    background: #44d62c;
+    color: #3D3D3D;
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    line-height: 140%;
+    transition: all .5s;
+}
+.skip-btn button {
+    background: transparent;
+    border: 0;
+    color: #44d62c;
+    font-size: 17px;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 140%;
+    transition: all .5s;
+}
+.skip-btn button:hover{
+    opacity: .5;
+}
+
+
+
+
+
+// .pros-single-item-content .check-mark, .cons-single-item-content .check-mark {
+//     width: 44px;
+//     height: 44px;
+//     text-align: center;
+//     line-height: 44px;
+//     border-radius: 50%;
+//     border: 1px solid #44d62c;
+//     margin-left: 8px;
+//     transition: all .5s;
+// }
+// .pros-single-item-content .check-mark i, .cons-single-item-content .check-mark i{
+//     transition: all .5s;
+// }
+// .pros-single-item-content .check-mark:hover, .pros-single-item-content .check-mark:hover i, .cons-single-item-content .check-mark:hover, .cons-single-item-content .check-mark:hover i {
+//    opacity: .6;
+//     cursor: pointer;
+// }
+// .pros-single-item-content .check-mark .fa, .cons-single-item-content .check-mark .fa {color: #44d62c;font-size: 18px;}
+
+.pros-single-item-content .fields, .cons-single-item-content .fields {
+    flex-grow: 1;
+}
+
+
+
+.boxed-btn {
+    border: none;
+    color: #3D3D3D;
+    background: #44d62c;
+    box-shadow: 0px 4px 8px rgba(143, 185, 66, 0.2);
+    box-sizing: border-box;
+    border-radius: 22px;
+    font-weight: 600;
+    font-size: 17px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    line-height: 140%;
+    padding: 10px 16px;
+    transition: all .5s;
+    text-decoration: none;
+}
+
+/*======== Review Rating Description Style End ========*/
+
+
+
+
+
+
+/*======== Review Rating Only Style Start ========*/
+.review-ro .boxed-btn {
+    max-width: 199px;
+    width: 100%;
+    text-align: center;
+}
+
+//Input Type Number Style Start
+input[type="number"] {
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+  }
+
+  input[type=number]::-webkit-inner-spin-button,
+  input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+  }
+
+  .number-input {
+    border: 0;
+    display:flex;
+    flex-direction:column;
+  }
+
+  .number-input,
+  .number-input * {
+    box-sizing: border-box;
+  }
+
+  .number-input button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 50px;
+    background: transparent;
+    font-size: 18px;
+    padding: 0;
+    height: 20px;
+    line-height: 20px;
+    color: #ffffff;
+    margin-top: 0px;
+    transition: all .5s;
+  }
+  .number-input button:hover {
+      color: #525252;
+  }
+
+  .number-input input[type=number] {
+    width: 50px;
+    padding: 0;
+    border: none;
+    border-width: 0 0px;
+    font-size: 20px;
+    height: auto;
+    font-weight: bold;
+    text-align: center;
+    color: $white;
+    background: transparent;
+
+  }
+  .blog-post-area.review-rdo .single-rating-star h5 {
+    margin-left: 5px;
+}
+
+//Input Type Number Style End
+/*======== Review Rating Only Style End ========*/
