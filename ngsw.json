@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1697871497934,
+  "timestamp": 1697871710333,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -11,15 +11,14 @@
         "ignoreVary": true
       },
       "urls": [
+        "/82.915e1b2cb7dff9f7.js",
         "/favicon.ico",
         "/index.html",
-        "/main.js",
+        "/main.ac6af27b1dc2e099.js",
         "/manifest.webmanifest",
-        "/polyfills.js",
-        "/runtime.js",
-        "/src_app_modules_admin_admin_module_ts.js",
-        "/styles.css",
-        "/vendor.js"
+        "/polyfills.4e1de369d2598716.js",
+        "/runtime.accb04cca7661653.js",
+        "/styles.ad882a3dd46cbca7.css"
       ],
       "patterns": []
     },
@@ -31,14 +30,14 @@
         "ignoreVary": true
       },
       "urls": [
-        "/Poppins-Bold.ttf",
-        "/Poppins-BoldItalic.ttf",
-        "/Poppins-Italic.ttf",
-        "/Poppins-Medium.ttf",
-        "/Poppins-MediumItalic.ttf",
-        "/Poppins-Regular.ttf",
-        "/Poppins-SemiBold.ttf",
-        "/Poppins-SemiBoldItalic.ttf",
+        "/Poppins-Bold.3b6def8cef97005c.ttf",
+        "/Poppins-BoldItalic.43c9dce85098452e.ttf",
+        "/Poppins-Italic.1d618e7c034d2065.ttf",
+        "/Poppins-Medium.98591b8ee50c8033.ttf",
+        "/Poppins-MediumItalic.ac94086d626712b2.ttf",
+        "/Poppins-Regular.e3fe7ebf149d0933.ttf",
+        "/Poppins-SemiBold.ba60cfd693c39204.ttf",
+        "/Poppins-SemiBoldItalic.de82b5c6e095ab94.ttf",
         "/assets/apanel/css/app-rtl.min.css",
         "/assets/apanel/css/app-rtl.min.css.map",
         "/assets/apanel/css/app.css",
@@ -1523,21 +1522,22 @@
         "/assets/img/youtube-reviews/youtube-review-4.png",
         "/assets/img/youtube-reviews/youtube-review-5.png",
         "/assets/img/youtube-reviews/youtube-review.png",
-        "/owl.video.play.png"
+        "/owl.video.play.e3b436436832b027.png"
       ],
       "patterns": []
     }
   ],
   "dataGroups": [],
   "hashTable": {
-    "/Poppins-Bold.ttf": "b9b65c039a1f10a5cb5e0726c6e7e18e98a8e517",
-    "/Poppins-BoldItalic.ttf": "5b2f8f7c4bbd52b6a1948c9781b45b17d31430ea",
-    "/Poppins-Italic.ttf": "597eeb5ac2ce09c6f57ee14457a91be9e4a826cd",
-    "/Poppins-Medium.ttf": "af7058373acbcf383dd114b8f9bbfb9faafd79eb",
-    "/Poppins-MediumItalic.ttf": "5633a4f50fb7cf79131b957beff9114b0997bdac",
-    "/Poppins-Regular.ttf": "01d319c533f62ea29f03b5df8adfd4d93d2d2a38",
-    "/Poppins-SemiBold.ttf": "20b39c8b480c946b084d6aa09f12bf10b2ec5aa6",
-    "/Poppins-SemiBoldItalic.ttf": "45a72bb344bcb2975668fa89a410e24f05f68830",
+    "/82.915e1b2cb7dff9f7.js": "09e1c827fc85227714018ae686d7b5323fccae83",
+    "/Poppins-Bold.3b6def8cef97005c.ttf": "b9b65c039a1f10a5cb5e0726c6e7e18e98a8e517",
+    "/Poppins-BoldItalic.43c9dce85098452e.ttf": "5b2f8f7c4bbd52b6a1948c9781b45b17d31430ea",
+    "/Poppins-Italic.1d618e7c034d2065.ttf": "597eeb5ac2ce09c6f57ee14457a91be9e4a826cd",
+    "/Poppins-Medium.98591b8ee50c8033.ttf": "af7058373acbcf383dd114b8f9bbfb9faafd79eb",
+    "/Poppins-MediumItalic.ac94086d626712b2.ttf": "5633a4f50fb7cf79131b957beff9114b0997bdac",
+    "/Poppins-Regular.e3fe7ebf149d0933.ttf": "01d319c533f62ea29f03b5df8adfd4d93d2d2a38",
+    "/Poppins-SemiBold.ba60cfd693c39204.ttf": "20b39c8b480c946b084d6aa09f12bf10b2ec5aa6",
+    "/Poppins-SemiBoldItalic.de82b5c6e095ab94.ttf": "45a72bb344bcb2975668fa89a410e24f05f68830",
     "/assets/apanel/css/app-rtl.min.css": "89a2eef44e7bdcc9a21a290c27304f3bc6dd90dc",
     "/assets/apanel/css/app-rtl.min.css.map": "3acce9e4e2460248c7045f4a382f4da5cbd3ac60",
     "/assets/apanel/css/app.css": "93595fdcff782506f234a3bfa6279b1aa9869594",
@@ -3023,15 +3023,13 @@
     "/assets/img/youtube-reviews/youtube-review-5.png": "69a31b120df57cf7b75a707dbcc1af41f5a87625",
     "/assets/img/youtube-reviews/youtube-review.png": "92f5001b63e165acb6a23ca43dcec0732700d8d5",
     "/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/index.html": "d2a212a5d36ac8649ae425de1e89702e04d3510e",
-    "/main.js": "11f93220038855a789b032930ea3c0a07183d674",
+    "/index.html": "beb1ea7da2ed4dc3027f5966c7998f34f6eca88a",
+    "/main.ac6af27b1dc2e099.js": "00e7c6a518d08b168c2f7d73ef76860766e6f06e",
     "/manifest.webmanifest": "23f0dd9f1e5be7f6547870743bac07ee03e0e0c3",
-    "/owl.video.play.png": "c0d64356ec2758cb280d183b4829c923e5ff61e5",
-    "/polyfills.js": "fc1b647c7c3a73f5a4d8eb3c3bfa1ae85df7b0e7",
-    "/runtime.js": "e39706bc1c1d8acdc04c6438886316335203a17c",
-    "/src_app_modules_admin_admin_module_ts.js": "fe6d459e8d51f6ebd37d437fc953670b6a9ab9f7",
-    "/styles.css": "fdeafe1bb029088bc1bfa527b5f2bdc7da400fde",
-    "/vendor.js": "c151e7c33517ddd753d73836756e01b7a373767f"
+    "/owl.video.play.e3b436436832b027.png": "c0d64356ec2758cb280d183b4829c923e5ff61e5",
+    "/polyfills.4e1de369d2598716.js": "36fdde49a74a17a68f47b9b1c08bed3b27f21e9c",
+    "/runtime.accb04cca7661653.js": "4faeb60d8c6eca861f9096b55c3cea6e45f8b48c",
+    "/styles.ad882a3dd46cbca7.css": "bf8dc8982c45eb8ea1f095f21b625516f97dabd2"
   },
   "navigationUrls": [
     {
