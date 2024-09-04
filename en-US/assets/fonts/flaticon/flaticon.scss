@@ -1,0 +1,122 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?c173b0973dcd015e7dd8894a8ac27949") format("truetype"),
+url("./flaticon.woff?c173b0973dcd015e7dd8894a8ac27949") format("woff"),
+url("./flaticon.woff2?c173b0973dcd015e7dd8894a8ac27949") format("woff2"),
+url("./flaticon.eot?c173b0973dcd015e7dd8894a8ac27949#iefix") format("embedded-opentype"),
+url("./flaticon.svg?c173b0973dcd015e7dd8894a8ac27949#flaticon") format("svg");
+}
+i{
+    line-height: 40%;
+}
+label i {
+    line-height: unset;
+}
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: bold !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "newspaper": "\f101",
+    "home": "\f102",
+    "export": "\f103",
+    "bell": "\f104",
+    "user": "\f105",
+    "left-arrow": "\f106",
+    "wink": "\f107",
+    "chat": "\f108",
+    "paper-plane": "\f109",
+    "image": "\f10a",
+    "add": "\f10b",
+    "plus": "\f10c",
+    "star": "\f10d",
+    "star-1": "\f10e",
+    "up-arrow-angle": "\f10f",
+    "down-arrow": "\f110",
+    "checked": "\f111",
+    "check": "\f112",
+    "pen": "\f113",
+    "export-1": "\f114",
+    "more": "\f115",
+    "letter-x": "\f116",
+    "search-interface-symbol": "\f117",
+);
+
+.flaticon-newspaper:before {
+    content: map-get($flaticon-map, "newspaper");
+}
+.flaticon-home:before {
+    content: map-get($flaticon-map, "home");
+}
+.flaticon-export:before {
+    content: map-get($flaticon-map, "export");
+}
+.flaticon-bell:before {
+    content: map-get($flaticon-map, "bell");
+}
+.flaticon-user:before {
+    content: map-get($flaticon-map, "user");
+}
+.flaticon-left-arrow:before {
+    content: map-get($flaticon-map, "left-arrow");
+}
+.flaticon-wink:before {
+    content: map-get($flaticon-map, "wink");
+}
+.flaticon-chat:before {
+    content: map-get($flaticon-map, "chat");
+}
+.flaticon-paper-plane:before {
+    content: map-get($flaticon-map, "paper-plane");
+}
+.flaticon-image:before {
+    content: map-get($flaticon-map, "image");
+}
+.flaticon-add:before {
+    content: map-get($flaticon-map, "add");
+}
+.flaticon-plus:before {
+    content: map-get($flaticon-map, "plus");
+}
+.flaticon-star:before {
+    content: map-get($flaticon-map, "star");
+}
+.flaticon-star-1:before {
+    content: map-get($flaticon-map, "star-1");
+}
+.flaticon-up-arrow-angle:before {
+    content: map-get($flaticon-map, "up-arrow-angle");
+}
+.flaticon-down-arrow:before {
+    content: map-get($flaticon-map, "down-arrow");
+}
+.flaticon-checked:before {
+    content: map-get($flaticon-map, "checked");
+}
+.flaticon-check:before {
+    content: map-get($flaticon-map, "check");
+}
+.flaticon-pen:before {
+    content: map-get($flaticon-map, "pen");
+}
+.flaticon-export-1:before {
+    content: map-get($flaticon-map, "export-1");
+}
+.flaticon-more:before {
+    content: map-get($flaticon-map, "more");
+}
+.flaticon-letter-x:before {
+    content: map-get($flaticon-map, "letter-x");
+}
+.flaticon-search-interface-symbol:before {
+    content: map-get($flaticon-map, "search-interface-symbol");
+}
